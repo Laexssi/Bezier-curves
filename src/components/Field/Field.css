@@ -1,0 +1,53 @@
+.Field {
+  position: relative;
+  border-left: 1.5px solid black;
+  border-top: 1.5px solid black;
+  border-right: 1.5px solid lightgray;
+  border-bottom: 1.5px solid lightgray;
+  background-color: white;
+  font-size: 24px;
+  width: 500px;
+  height: 500px;
+  margin-bottom: 24px;
+}
+.Field::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-bottom: 1.5px solid black;
+  border-right: 1.5px solid black;
+  transform: rotate(45deg);
+  position: absolute;
+  bottom: 0px;
+  left: -6px;
+}
+
+.Field::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-bottom: 1.5px solid black;
+  border-right: 1.5px solid black;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: -6px;
+  right: 0px;
+}
+
+.Field .zero {
+  position: absolute;
+  top: -12px;
+  left: -24px;
+}
+
+.Field .axisX {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+}
+
+.Field .axisY {
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+}

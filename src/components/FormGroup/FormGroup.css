@@ -1,0 +1,20 @@
+.Form {
+    padding: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Form label {
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+.Form input {
+    width: 70px;
+}
+
+.Form fieldset {
+    
+}
+
